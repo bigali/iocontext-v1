@@ -1,0 +1,11 @@
+applications:
+- services:
+  - IOUserModeling
+  disk_quota: 1024M
+  buildpack: python_buildpack
+  host: iocontext
+  name: iocontext
+  path: .
+  domain: eu-gb.mybluemix.net
+  instances: 1
+  memory: 128M
