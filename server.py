@@ -4,9 +4,9 @@ from flask import Flask, request, jsonify
 import os
 
 app = Flask(__name__, static_url_path="")
-auth = tweepy.OAuthHandler("VGbGua2zcrvAt8q7rFzYcF7Pp", "LC7DxOcHjzaoHH61MjlWwJvkERWhvnNIHKIasvvvDq9i3J8fGf")
-auth.set_access_token("273164662-rcIu2uf0crCAolbKpGJETrU9iMc5XhDHjEo2Oupq",
-                      "QxjyYfMQlK83GqwxVZmD4AZFIjtVNTbALFmrGLFdfjfjo")
+auth = tweepy.OAuthHandler("xx", "xx")
+auth.set_access_token("xx-xx",
+                      "xx")
 
 api = tweepy.API(auth)
 
@@ -14,8 +14,8 @@ api = tweepy.API(auth)
 
 
 
-userModeling = WatsonUserModelingService(url="https://gateway.watsonplatform.net/systemu/service/",user="072abbf5-28cd-48e8-920a-cd147fb83578", password="CQjtluCopyFo")
-relationshipExtration= WatsonRelationshipExtractionService(user= "d9d905bb-70f9-42a0-9200-2db9e5c6af69",password= "btOvBRXxU2A6")
+userModeling = WatsonUserModelingService(url="xx", user="xx", password="xx")
+relationshipExtration= WatsonRelationshipExtractionService(user="xx" ,password="xx")
 
 
 @app.route('/')
